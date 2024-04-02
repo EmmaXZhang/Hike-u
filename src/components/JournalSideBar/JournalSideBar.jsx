@@ -14,7 +14,7 @@ export default function JournalSideBar({
         <JournalSearch />
       </div>
 
-      {/* Achives filter*/}
+      {/* Achives */}
       <div className="sidebar-box ftco-animate fadeInUp ftco-animated row-cols-md-1">
         <Achive
           uniqueMonthYear={uniqueMonthYear}
@@ -30,5 +30,3 @@ export default function JournalSideBar({
     </>
   );
 }
-
-// test
