@@ -9,7 +9,7 @@ export default function JournalList({ filteredJournalList, handleDelete }) {
     <p>No Journal Yet!</p>;
   }
 
-  //map throught all journal in the list (include "delete" button)
+  //map throught all journal in the list ("delete button")
   const list = filteredJournalList.map((journal, i) => (
     <JournalListItem key={i} journal={journal} handleDelete={handleDelete} />
   ));
