@@ -1,0 +1,19 @@
+.content-title {
+  font-family: "Lora", serif;
+}
+
+.journalCard:hover {
+  transform: scale(1.05);
+}
+
+.journalCard {
+  border: none;
+  background-color: transparent;
+}
+
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
