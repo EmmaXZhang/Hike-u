@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import "./JournalListItem.css";
-// import { Trash } from "bootstrap-icons-react";
-// import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function JournalListItem({ journal, handleDelete }) {
   return (
