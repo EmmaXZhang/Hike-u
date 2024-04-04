@@ -47,9 +47,7 @@ async function index(req, res) {
         .sort({ date: -1 });
     } else {
       //no search term, fetch all journals
-      journals = await Journal.find({ user: req.user._id })
-        .populate("user")
-        .sort({ date: -1 });
+      journals = await Journal.find({}).populate("user").sort({ date: -1 });
     }
 
     res.json(journals);
@@ -60,6 +58,16 @@ async function index(req, res) {
 
 async function deleteJournal(req, res) {
   try {
+    const journal = await Journal.findOne({
+      _id: req.params.id,
+      user: req.user._id,
+    });
+
+    if (!journal) {
+      return res.status(404).json({
+        error: "Journal not found or you don't have permission to delete it",
+      });
+    }
     await Journal.deleteOne({ _id: req.params.id, user: req.user._id });
     res.json(true);
   } catch (err) {
