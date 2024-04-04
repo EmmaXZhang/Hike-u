@@ -4,11 +4,11 @@
 
 Your ultimate hike planning app. Plan routes on Mapbox, choose dates, and view weather forecasts seamlessly. Create and manage packing lists based on your gear equipment list. Capture your adventures with journal entries, including photos and memories. Simplify your hiking experience with Hike-U.
 
-![Screenshot](/README/homePage.png){:width="50px"}
-![Screenshot](/README/equipPage.png){:width="50px"}
-![Screenshot](/README/journalPage.png){:width="50px"}
-![Screenshot](/README/startAdventure.png){:width="50px"}
-![Screenshot](/README/authPage.png){:width="50px"}
+<img src="/README/homePage.png" alt="Screenshot" width="300">
+<img src="/README/equipPage.png" alt="Screenshot" width="300">
+<img src="/README/journalPage.png" alt="Screenshot" width="300">
+<img src="/README/startAdventurePage.png" alt="Screenshot" width="300">
+<img src="/README/authPage.png" alt="Screenshot" width="300">
 
 ## Table of Contents
 
