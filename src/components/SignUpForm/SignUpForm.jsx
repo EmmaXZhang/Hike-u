@@ -66,7 +66,7 @@ export default class SignUpForm extends Component {
                     name="name"
                     value={this.state.name}
                     onChange={this.handleChange}
-                    placeholder="name@example.com"
+                    placeholder="name"
                     required
                   />
                   <label for="name" className="form-label">
