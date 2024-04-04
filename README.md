@@ -75,3 +75,10 @@ npm run build
 npx nodemon server.js
 npm start
 ```
+
+## Next steps
+
+- [ ] Add newsletter feature
+- [ ] Link hike stops to mapbox api
+- [ ] Add hike plan on journal page
+- [ ] Improve CSS on journal detail page
