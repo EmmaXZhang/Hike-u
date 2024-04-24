@@ -30,13 +30,25 @@ app.use("/api/users", require("./routes/api/users"));
 app.use("/api/journals", require("./routes/api/journals"));
 app.use("/api/equipment", require("./routes/api/equipment"));
 app.use("/api/hikes/spots", require("./routes/api/spots"));
-app.use("/api/hikes/hike", require("./routes/api/hikes"))
+app.use("/api/hikes/hike", require("./routes/api/hikes"));
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests
-app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
-});
+// app.get("/*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "build", "index.html"));
+// });
+
+if (process.env.NODE_ENV === "production") {
+  const __dirname = path.resolve();
+  app.use(express.static(path.join(__dirname, "build")));
+  app.get("*", (req, res) =>
+    res.sendFile(path.resolve(__dirname, "build", "index.html"))
+  );
+} else {
+  app.get("/", (req, res) => {
+    res.send("API is running....");
+  });
+}
 
 app.listen(port, function () {
   console.log(`Express app running on port ${port}`);
