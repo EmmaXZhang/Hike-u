@@ -34,9 +34,6 @@ app.use("/api/hikes/hike", require("./routes/api/hikes"));
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests
-// app.get("/*", function (req, res) {
-//   res.sendFile(path.join(__dirname, "build", "index.html"));
-// });
 
 if (process.env.NODE_ENV === "production") {
   const __dirname = path.resolve();
