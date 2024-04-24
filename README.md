@@ -1,5 +1,7 @@
 # Hike-U
 
+To view the website, click this link: <a href="https://hike-u.onrender.com">Hike-U</a>
+
 ## Description
 
 Your ultimate hike planning app. Plan routes on Mapbox, choose dates, and view weather forecasts seamlessly. Create and manage packing lists based on your gear equipment list. Capture your adventures with journal entries, including photos and memories. Simplify your hiking experience with Hike-U.
